@@ -29,7 +29,7 @@ services:
       - traefik.docker.network=frontend
       - traefik.http.routers.test_machine.rule=Host(`www.zotprojet.re`)
     ports:
-      - 5001:80
+      - 80:80
     networks:
       - frontend
 
