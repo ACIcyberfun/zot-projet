@@ -78,8 +78,8 @@ def templater(slug):
     Client = Query()
     client = db.search(Client.slug == slug)
     if len(client) > 0 :
-        # return render_template('test/client.html', client=client[0])
-        return render_template('story/index.html', client=client[0])
+        return render_template('test/client.html', client=client[0])
+        # return render_template('story/index.html', client=client[0])
     else :
         return redirect(url_for('formulaire'))
 
