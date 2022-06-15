@@ -1,0 +1,6 @@
+FROM python:3.7-slim
+RUN apt update
+RUN apt upgrade -y
+RUN pip install pip --upgrade
+COPY requirements.txt /requirements.txt
+RUN pip install --no-input -r requirements.txt

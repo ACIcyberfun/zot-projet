@@ -1,0 +1,4 @@
+Flask
+tinydb
+ipdb
+unicode-slugify

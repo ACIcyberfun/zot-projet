@@ -1,0 +1,71 @@
+.text_bleu
+{
+    color: #4fc4cf;
+}
+
+.gras
+{
+    font-weight: bold;
+}
+
+#prems_p
+{
+    color: green;
+}
+
+.center
+{
+    text-align: center;
+}
+
+
+.justify
+{
+    text-align: justify;
+}
+
+strong
+{
+    color: red;
+}
+
+h1
+{
+    font-size: xx-large;
+}
+
+h2
+{
+    font-size: x-large;
+}
+
+h3
+{
+    font-size: 3em;
+}
+
+.imageflottante
+{
+    float: left;
+}
+
+.reset
+{
+    clear: both;
+}
+
+.bck_a
+{
+    background-color: #0f0e17;
+    color: #a7a9be;
+}
+
+.bord 
+{
+    text-shadow: 20px 25px 5px black;
+}
+
+.bord:active
+{
+    text-shadow: 20px 25px 500px black;
+}

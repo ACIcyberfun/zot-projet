@@ -1,0 +1,40 @@
+version: "3.7"
+services:
+  flask:
+    build: .
+    hostname: flask
+    container_name: flask
+    ports:
+      - 5000:5000
+    volumes:
+      - ../flask:/flask
+    working_dir: /flask
+    networks:
+      - frontend
+    command: "flask run --reload --host=0.0.0.0"
+
+
+  nginx:
+    image: nginx
+    restart: always
+    volumes:
+      - ./nginx:/etc/nginx/conf.d
+      - ../static:/www/static
+    depends_on:
+      - flask
+    links:
+      - flask:flask
+    labels:
+      - traefik.enable=true
+      - traefik.docker.network=frontend
+      - traefik.http.routers.test_machine.rule=Host(`www.zotprojet.re`)
+    ports:
+      - 5001:80
+    networks:
+      - frontend
+
+networks:
+  frontend:
+    external: true
+
+
