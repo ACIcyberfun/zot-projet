@@ -1,0 +1,88 @@
+body{
+
+	font-family: verdana;
+	color:white;
+	font-size: 0.8em;
+	 background-image: url("../img/bg.jpg");
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+}
+
+h1
+{
+	color: #b8c1ec;
+	font-family: trebuchet MS;
+	font-size: xx-large;
+
+}
+
+h3
+{
+	color: #b8c1ec;
+	font-family: trebuchet MS;
+	font-size: x-large;
+}
+
+.tout{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+hr
+{
+	color:white;
+	border: dashed;
+	width:50px;
+	margin-left: 2px;
+
+}
+
+.partieun
+{
+	width:50%;
+}
+
+.partiedeux
+{
+	width: 50%;
+	text-align: center;
+
+}
+
+img
+{
+	width:80%;
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px 2px rgba(0,0,0,5);
+
+}
+
+button
+{
+	color:#232946;
+	border-radius: 10px;
+	border-color: #232946;
+	text-align: center;
+	width:20%;
+	height: 50%;
+	margin-top: 20px;
+	padding:10px;
+
+}
+
+/* changement du bouton quand on met la souris dessus*/
+button:hover
+{
+	color:#fff;
+	border-radius: 10px;
+	border-color: #fff;
+	background-color: #232946;
+	text-align: center;
+	width:20%;
+	height: 50%;
+	margin-top: 20px;
+	padding:10px;
+
+}
