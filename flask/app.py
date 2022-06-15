@@ -16,7 +16,7 @@ db = TinyDB('./db.json')
 '''
 Projet Example
 '''
-
+#thomasditbenard wiseal gang
 # On teste l'appli avec la route par default.
 @app.route("/")
 def test_template():
