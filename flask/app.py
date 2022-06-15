@@ -1,7 +1,7 @@
 #! /usr/bin/python
 # -*- coding:utf-8 -*
 
-
+# Thomas est là
 # On charge les dépendances logicielles 
 from flask import Flask, request, render_template, redirect, url_for
 from tinydb import TinyDB, Query
