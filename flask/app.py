@@ -1,6 +1,6 @@
 #! /usr/bin/python
 # -*- coding:utf-8 -*
-
+#thomasditbenard wiseal gang
 # Thomas est là
 # On charge les dépendances logicielles 
 from flask import Flask, request, render_template, redirect, url_for
@@ -16,7 +16,7 @@ db = TinyDB('./db.json')
 '''
 Projet Example
 '''
-#thomasditbenard wiseal gang
+
 # On teste l'appli avec la route par default.
 @app.route("/")
 def test_template():
