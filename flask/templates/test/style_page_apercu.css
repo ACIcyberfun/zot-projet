@@ -1,16 +1,25 @@
+@media all and (orientation: portrait)
+{
+
+}
+
 body{
 
 	font-family: verdana;
-	color:white;
+	color:#232323;
 	font-size: 0.8em;
-	 background-image: url("../img/bg.jpg");
-    background-attachment: scroll;
-    background-repeat: no-repeat;
+
 }
+
+.logo
+{
+	text-align: center;
+}
+
 
 h1
 {
-	color: #b8c1ec;
+	color: #078080;
 	font-family: trebuchet MS;
 	font-size: xx-large;
 
@@ -18,7 +27,7 @@ h1
 
 h3
 {
-	color: #b8c1ec;
+	color: #078080;
 	font-family: trebuchet MS;
 	font-size: x-large;
 }
@@ -32,11 +41,11 @@ h3
 
 hr
 {
-	color:white;
-	border: dashed;
-	width:50px;
+	color:#f45d48;
+	border: dashed 1px;
+	width:200px;
 	margin-left: 2px;
-
+	
 }
 
 .partieun
@@ -51,9 +60,15 @@ hr
 
 }
 
-img
+.nouscontacter
 {
-	width:80%;
+	
+	margin-top:200px;
+}
+
+.imageflottante
+{
+	width:100%;
 	border-radius: 10px;
 	box-shadow: 5px 5px 5px 2px rgba(0,0,0,5);
 
@@ -61,28 +76,53 @@ img
 
 button
 {
-	color:#232946;
+	color:#232323;
+	background-color: #078080;
 	border-radius: 10px;
-	border-color: #232946;
+	border-color: #232323;
 	text-align: center;
 	width:20%;
 	height: 50%;
 	margin-top: 20px;
 	padding:10px;
+	overflow: hidden;
 
 }
 
 /* changement du bouton quand on met la souris dessus*/
 button:hover
 {
-	color:#fff;
+	color:#ffffff;
 	border-radius: 10px;
-	border-color: #fff;
-	background-color: #232946;
+	border-color: #ffffff;
+	background-color: #f45d48;
 	text-align: center;
 	width:20%;
 	height: 50%;
 	margin-top: 20px;
 	padding:10px;
+	overflow: hidden;
 
+}
+
+.copyright
+{
+	font-size: 1em;
+	text-align: center;
+	margin-top:2px;
+}
+
+.footerline
+{
+	color:#078080;
+	width:100%;	
+	border: solid 0.1em;
+
+
+
+}
+i{
+	color: #078080;
+	padding-right: 10px;
+	
 }
