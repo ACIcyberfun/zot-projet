@@ -1,0 +1,123 @@
+header
+{
+	position: fixed;
+	right: 0px;
+	top: 0px;
+	background-color: #4acaa8;
+	width: 30%;
+	height: 100%;
+
+	color: white;
+}
+
+
+	#presentation {
+		height: 40%;
+
+		margin-top: 20px ;
+
+
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	#presentation h2 
+	{	
+		font-size: large;
+		text-align: center;
+		padding: 0px 20px;
+	}
+
+	.white
+	{
+		color: white;
+	}
+
+	.avatar {
+		border-radius: 50%;
+		height: 150px;
+		width: 150px;
+	}
+
+	nav {
+		/*border: 1px black solid;*/
+		height: 50%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+	}
+		.prems_bouton {
+			border-top: 1px white solid ;
+		}
+
+		.bouton {
+			width: 100%;
+			padding: 25px 0;
+			border-bottom: 1px white solid ;
+			font-size: x-large;
+			text-align: center;
+		}
+
+		.bouton a 
+		{
+			color: white;
+			text-decoration: none;
+		}
+
+
+section
+{
+	width: 70% ;
+}
+
+	#banniere
+	{
+		height: 15em;
+	}
+
+	.img_banniere
+	{
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		z-index: -1;
+
+	}
+
+hr 
+{
+	border: 3px #f4f4f4 solid;
+	position: absolute;
+	width: 100%;
+	left: 0px;
+	z-index: -2;
+}
+
+article
+{
+	padding: 10px;
+}
+
+h1
+{
+	font-size: xx-large;
+	color: #4acaa8;
+}
+
+
+h2
+{
+	font-size: xx-large;
+	color: #898989;
+}
+
+p 
+{
+	text-align: justify;
+}
