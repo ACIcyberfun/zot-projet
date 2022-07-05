@@ -1,12 +1,77 @@
 <!DOCTYPE html>
 <html>
+
+
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>{{ client.title }}</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="css/style.css" />
+    <title>Zotprojet</title>
 </head>
+<header>
+
+    <nav class="navbar navbar-expand">
+        <div class="container">
+            <a class="navbar-brand text-uppercase fw-bold" href="images/logo_cyberfun.png">
+                <span class="bg-light bg-gradient p-1 rounded-3 text-light">
+                    <img src="img/logo_cyberfun.png" width="100">
+                </span>
+            </a>
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                           <a class="test nav-link">Testez</a>
+                    </li>
+                </ul>
+          </div>
+    </nav>
+    <hr>
+</header>
+
+
 <body>
-	<h1>{{ client.name }}</h1>
-	<p>{{ client.description }}</p>
+    
+    <div class="container">
+        <div class="row">	
+            <div class="col-sm-6 col-lg-6">
+                <div> 
+                    <h1> VOICI VOTRE TEMPLATE </h1>
+                    <hr class="lil"/>
+                    <p> Si ce template n'est pas à votre goût, <br /> vous pouvez retourner au formulaire pour apporter des modifications.</p>
+                    
+                    <!--<button><strong>MODIFIER</strong></button>-->
+                    <button type="button" class="button data-bs-toggle="button" autocomplete="off">MODIFIER</button>
+
+                </div>
+                
+                <div class="nouscontacter">
+                    <h3> NOUS CONTACTER</h3>
+                    <hr class="lil"/>
+                    <div class="renseignements">
+                        <p> <i class="bi bi-house-door-fill"></i> MAISON DES ASSOCIATIONS <br /> 60 CHEMIN DESBAYSSINS <br /> 97426 TROIS-BASSINS</p>
+                        <p><i class="bi bi-telephone-fill"></i>02 62 44 48 52 <br /> 06 92 55 34 28</p>
+                        <p> <i class="bi bi-envelope-fill"></i>contact.cyberun@gmail.com</p>
+                    </div>	        
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-6 ">
+                <img src="img/template.jpg" alt="template" width="10%" class="imageflottante">
+                <br />
+            </div>
+        </div>	  
+        
+    </div>
+    
+<hr class="footerline">
+<div class="copyright">Copyright - Cyberun 2022</div>
+      
+    
+    
+    
+    
+    
 </body>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 </html>
