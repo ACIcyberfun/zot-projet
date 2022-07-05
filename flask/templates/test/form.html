@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+     <link rel="stylesheet" href="style.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Formulaire </title>
+</head>
+<body>
+	<h1> Formulaire template personnalisé</h1>
+
+<form method="post" action="traitement.php">
+    <p>
+    
+        <label for="nom">Nom :</label>
+        
+        <input type="text" name="nom" id="nom" placeholder="Ex : Hoareau" size="30" maxlength="10" />
+        
+       <br />
+         <label for="prenom">Prénom :</label>
+        
+        <input type="text" name="prenom" id="prenom" placeholder="Ex : Delia" size="30" maxlength="10" />
+        
+       <br />
+       
+       <label for="email">Adresse email :</label>
+       <input type="email" name="email" id="email" />
+       
+       <br />
+
+	   
+
+<!-- Ici menu déroulant  -->
+
+<label for="secteur">Quel est votre secteur d'activité? </label><br />
+       <select name="secteur" id="secteur">
+               <option value="agroalimentaire">Agroalimentaire</option>
+               <option value="communication digitale">Communication Digitale</option>
+               <option value="commerce">Commerce</option>
+               <option value="banque/assurance"> Banque/Assurance</option>
+       </select>
+<br>
+<label for="nomdelasociete"> Nom de la société :</label>
+        
+        <input type="text" name="nomdelasociete" id="nomdelasociete" placeholder="Ex : zot projet" size="30" maxlength="10" />
+        
+       <br />
+
+       <label for="couleur"> Quelle couleur choisissez-vous ? </label><br />
+       <select name="couleur" id="couleur">
+               <option value="noir">noir</option>
+               <option value="blanc">blanc</option>
+               <option value="bleu">bleu</option>
+               <option value="vert">vert</option>
+       </select>
+<br>
+<!-- image -->
+<label for="avatar">Inserer une image ou votre logo</label>
+       <input type="file" name="avatar" id="avatar" accept="image.png, image.jpg" />
+       
+       <br />
+
+<label for="accroche"> Phrase d'accroche/Slogan:</label>
+        
+        <input type="text" name="accroche" id="accroche" placeholder="Ex : Visualisez votre projet" size="30" maxlength="10" />
+        
+       <br />
+
+
+<label for="description">Description de votre entreprise:</label><br />
+       <textarea name="description" id="description"></textarea>
+ <br />
+
+<input type="submit" value="Valider" />
+    </p>
+</form>
+
+</body>
+</html>
