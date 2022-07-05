@@ -1,0 +1,94 @@
+body
+{
+	background-color: #f8f5f2 ;
+	font-family: 'Raleway', sans-serif;
+
+
+
+}
+.navbar {
+	background-color: #ffff;
+}
+.test{
+	color: #078080;
+}
+.image_un
+{
+	text-align: center;
+}
+h1
+{
+	color: #232323;
+	font-family: 'Raleway', sans-serif;
+}
+.bandeau
+{
+	 width: "0.5em";
+}
+.section_text_un
+{
+	color: #222525;
+	text-align: center;
+}
+.section_text_deux
+{
+	color: #222525;
+	text-align: center;
+}
+h2
+{
+	color: #232323;
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+
+}
+
+.test
+{
+	text-align: center;
+}
+span
+{
+	color: #078080;
+}
+#ligne
+{
+	color:#f45d48;
+    border: dashed 1px;
+    width:100%;
+    margin-left: 2px;
+}
+#btn
+{
+	background-color: #078080;
+	font-size: 25px;
+	border-radius: 5px;
+	color: #232323;
+	border-color: black;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-right: 20px;
+	padding-left: 20px;
+	width: 150px;
+	border: 0px;
+	font-family: 'Raleway', sans-serif;
+
+
+}
+#btn:hover
+{
+	background-color: #f45d48;
+	color: white;
+	font-family: 'Raleway', sans-serif;
+
+}
+
+	footer
+{
+	text-align: center;
+	border: 0.5em;
+	font-family: 'Raleway', sans-serif;
+
+}
+
+ 
