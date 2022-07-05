@@ -1,79 +1,119 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> 
+
+
 	<meta charset="utf-8">
-     <link rel="stylesheet" href="style.css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title> Formulaire </title>
+	<title></title>
 </head>
 <body>
-	<h1> Formulaire template personnalisé</h1>
-
-<form method="post" action="traitement.php">
-    <p>
-    
-        <label for="nom">Nom :</label>
-        
-        <input type="text" name="nom" id="nom" placeholder="Ex : Hoareau" size="30" maxlength="10" />
-        
-       <br />
-         <label for="prenom">Prénom :</label>
-        
-        <input type="text" name="prenom" id="prenom" placeholder="Ex : Delia" size="30" maxlength="10" />
-        
-       <br />
-       
-       <label for="email">Adresse email :</label>
-       <input type="email" name="email" id="email" />
-       
-       <br />
-
-	   
-
-<!-- Ici menu déroulant  -->
-
-<label for="secteur">Quel est votre secteur d'activité? </label><br />
-       <select name="secteur" id="secteur">
-               <option value="agroalimentaire">Agroalimentaire</option>
-               <option value="communication digitale">Communication Digitale</option>
-               <option value="commerce">Commerce</option>
-               <option value="banque/assurance"> Banque/Assurance</option>
-       </select>
-<br>
-<label for="nomdelasociete"> Nom de la société :</label>
-        
-        <input type="text" name="nomdelasociete" id="nomdelasociete" placeholder="Ex : zot projet" size="30" maxlength="10" />
-        
-       <br />
-
-       <label for="couleur"> Quelle couleur choisissez-vous ? </label><br />
-       <select name="couleur" id="couleur">
-               <option value="noir">noir</option>
-               <option value="blanc">blanc</option>
-               <option value="bleu">bleu</option>
-               <option value="vert">vert</option>
-       </select>
-<br>
-<!-- image -->
-<label for="avatar">Inserer une image ou votre logo</label>
-       <input type="file" name="avatar" id="avatar" accept="image.png, image.jpg" />
-       
-       <br />
-
-<label for="accroche"> Phrase d'accroche/Slogan:</label>
-        
-        <input type="text" name="accroche" id="accroche" placeholder="Ex : Visualisez votre projet" size="30" maxlength="10" />
-        
-       <br />
 
 
-<label for="description">Description de votre entreprise:</label><br />
-       <textarea name="description" id="description"></textarea>
- <br />
+<div class="container">
+             <h1>Formulaire template personnalisé </h1> 
 
-<input type="submit" value="Valider" />
-    </p>
-</form>
+
+             <form class="needs-validation" novalidate>
+                 <div class="form-row">
+                     <div class="col-md-4 mb-3">
+                         <label for="prenom">Prénom</label>
+                         <input type="text" class="form-control" id="prenom" placeholder="Délia" required>
+                         <div class="valid-feedback">Ok !</div>
+                         <div class="invalid-feedback">Valeur incorrecte</div>
+                     </div>
+                     <div class="col-md-4 mb-3">
+                         <label for="nom">Nom</label>
+                         <input type="text" class="form-control" id="nom" placeholder="Béonel" required>
+                         <div class="valid-feedback">Ok !</div>
+                         <div class="invalid-feedback">Valeur incorrecte</div>
+                     </div>
+                     <div class="col-md-4 mb-3">
+                         <label for="adressemail">Adresse mail</label>
+                         <input type="text" class="form-control" id="adressemail" placeholder="deliabelle.bnl@gmail.com" required>
+                         <div class="valid-feedback">Ok !</div>
+                         <div class="invalid-feedback">Valeur incorrecte</div>
+                     </div>
+                 </div>
+
+
+
+<label for="secteur" class="form-label">Quel est votre secteur d'activité ? </label>
+<input class="form-control" list="datalistOptions" id="secteur" placeholder="Type to search...">
+<datalist id="datalistOptions">
+  <option value="Agroalimentaire">
+  <option value="Communication digitale">
+  <option value="Banque/Assurance">
+  <option value="Commerce">
+</datalist>
+
+
+
+
+
+                 <div class="form-row">
+                     <div class="col-md-6 mb-3">
+                         <label for="nomdelasociete">Nom de la société</label>
+                         <input type="text" class="form-control" id="DB entreprise" placeholder="DB entreprise" required>
+                         <div class="valid-feedback">Ok !</div>
+                         <div class="invalid-feedback">Valeur incorrecte</div>
+                     </div>
+
+
+<label for="couleur" class="form-label">Quelle couleur choisissez-vous? </label>
+<input class="form-control" list="colorlist" id="couleur" placeholder="Type to select...">
+<datalist id="colorlist">
+  <option value="Noir">
+  <option value="Blanc">
+  <option value="Vert">
+  <option value="Bleu">
+</datalist>
+
+
+
+<div>
+  <label for="formFileLg" class="form-label"> Insérez une image </label>
+  <input class="form-control form-control-lg" id="formFileLg" type="file">
+</div>
+
+<div class="mb-3">
+  <label for="formFileSm" class="form-label">Insérez un logo</label>
+  <input class="form-control form-control-sm" id="formFileSm" type="file">
+</div>
+
+
+
+
+
+                     <div class="col-md-3 mb-3">
+                         <label for="slogan">Phrase d'accorche/slogan</label>
+                         <input type="text" class="form-control" id="slogan" placeholder="Ici votre slogan" required>
+                         <div class="valid-feedback">Ok !</div>
+                         <div class="invalid-feedback">Valeur incorrecte</div>
+                     </div>
+
+
+<div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">Description de votre entreprise </label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+</div>
+
+
+
+
+
+                
+                 <button class="btn btn-primary" type="submit">Envoyer</button>
+             </form>
+         </div>
+         <script>
+          
+
+
+
+
 
 </body>
 </html>
