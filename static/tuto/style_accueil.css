@@ -5,7 +5,9 @@ body
 .navbar {
 	background-color: #ffff;
 }
-
+.test{
+	color: #078080;
+}
 .image_un
 {
 	text-align: center;
