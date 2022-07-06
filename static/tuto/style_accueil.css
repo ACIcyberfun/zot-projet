@@ -2,6 +2,10 @@ body
 {
 	background-color: #f8f5f2 ;
 }
+.navbar {
+	background-color: #ffff;
+}
+
 .image_un
 {
 	text-align: center;
