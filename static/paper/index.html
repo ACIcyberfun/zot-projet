@@ -1,19 +1,21 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html id="html" lang="fr" class=''>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./paper.css">
     <title>Paper Template</title>
 </head>
-<body>
+<body class="paper">
+
 <header>
     <nav class="border fixed split-nav">
         <div class="nav-brand">
             <h3><a href="#">Title</a></h3>
         </div>
+
+
         <div class="collapsible">
+
             <input id="collapsible1" type="checkbox" name="collapsible1">
             <label for="collapsible1">
                 <div class="bar1"></div>
@@ -25,15 +27,18 @@
                     <li><a href="#">Prems</a></li>
                     <li><a href="#">Deuz</a></li>
                     <li><a href="#">Troiz</a></li>
+
                 </ul>
             </div>
         </div>
     </nav>
 </header>
 
-<div style="margin-top: 100px;"></div>
+<div style="margin-top: 75px;"></div>
 
 <main>
+
+
     <section id="intro">
         <div class="paper container">
             <h1>Title</h1>
@@ -88,12 +93,51 @@
                     </div>
                 </div>
 
+                <div class="col sm-12 md-6 lg-4">
+                    <div class="card">
+                        <img src="https://picsum.photos/768" alt="Card example image">
+
+                        <div class="card-body">
+                            <h4 class="card-title">My awesome Paper card!</h4>
+                            <h5 class="card-subtitle">Nice looking subtitle.</h5>
+                            <p class="card-text">Notice that the card width in this example have been set to 20rem,
+                                otherwise it will try to fill the current container/row where the card is.</p>
+                            <button>Let me go here!</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
     </section>
+
 </main>
 
+<footer class="paper">
+    <div>
+        <fieldset class="form-group">
+            <label for="paperSwitch1" class="paper-switch-tile">
+                <input id="paperSwitch1" name="paperSwitch1" type="checkbox" onclick="changeTheme()"/>
+                <div class="paper-switch-tile-card border">
+                    <div class="paper-switch-tile-card-front border">Clair</div>
+                    <div class="paper-switch-tile-card-back border background-primary">Sombre</div>
+                </div>
+            </label>
+        </fieldset>
+    </div>
+</footer>
 
 </body>
+
+<script>
+    function changeTheme() {
+        var html = document.getElementById('html')
+        var dark = html.classList.contains('dark')
+        console.log(dark)
+        html.classList.add('dark');
+        if (dark) {
+            html.classList.remove('dark')
+        }
+    }
+</script>
 </html>
