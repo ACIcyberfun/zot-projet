@@ -8,6 +8,7 @@ body
 }
 .test{
 	color: #078080;
+	text-align: center;
 }
 .image_un
 {
@@ -33,11 +34,6 @@ h2
 	color: #232323;
 	text-align: center;
 	font-family: 'Raleway', sans-serif;
-}
-
-.test
-{
-	text-align: center;
 }
 span
 {
