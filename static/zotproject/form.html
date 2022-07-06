@@ -12,137 +12,147 @@
 <body>
 
 
-<div class="container">
-             <h1>Formulaire template personnalisé </h1> 
+    <div class="container">
+        <section class="row">
+
+            <!-- Contour du grand titre -->
+            <div class="bg-success rounded-3 col-lg-6 offset-lg-3"> <h1 align="center">Formulaire template personnalisé </h1> 
 
 
-             <form class="needs-validation" novalidate>
-                 <div class="form-row">
-                     <div class="col-md-4 mb-3">
-                         <label for="prenom">Prénom</label>
-                         <input type="text" class="form-control" id="prenom" placeholder="Délia" required>
-                         <div class="valid-feedback">Ok !</div>
-                         <div class="invalid-feedback">Valeur incorrecte</div>
-                     </div>
-                     <div class="col-md-4 mb-3">
-                         <label for="nom">Nom</label>
-                         <input type="text" class="form-control" id="nom" placeholder="Béonel" required>
-                         <div class="valid-feedback">Ok !</div>
-                         <div class="invalid-feedback">Valeur incorrecte</div>
-                     </div>
-                     <div class="col-md-4 mb-3">
-                         <label for="adressemail">Adresse mail</label>
-                         <input type="text" class="form-control" id="adressemail" placeholder="deliabelle.bnl@gmail.com" required>
-                         <div class="valid-feedback">Ok !</div>
-                         <div class="invalid-feedback">Valeur incorrecte</div>
-                     </div>
-                 </div>
+            </div>
+        </section>
 
 
 
-<label for="secteur" class="form-label">Quel est votre secteur d'activité ? </label>
-<input class="form-control" list="datalistOptions" id="secteur" placeholder="Type to search...">
-<datalist id="datalistOptions">
-  <option value="Agroalimentaire">
-  <option value="Communication digitale">
-  <option value="Banque/Assurance">
-  <option value="Commerce">
-</datalist>
+        <form align="center" class="needs-validation" >
+           <div align="center" class="form-row">
+               <div class="col-md-4 mb-3">
+                   <label for="prenom">Prénom:</label>
+                   <input type="text" class="form-control" id="prenom" name="prenom"  required>
+                   <div class="valid-feedback">Ok !</div>
+                   <div class="invalid-feedback">Valeur incorrecte</div>
+               </div>
+               <div class="col-md-4 mb-3">
+                   <label for="nom">Nom:</label>
+                   <input type="text" class="form-control" id="nom" name="nom" required>
+                   <div class="valid-feedback">Ok !</div>
+                   <div class="invalid-feedback">Valeur incorrecte</div>
+               </div>
+               <div class="col-md-4 mb-3">
+                   <label for="adressemail">Adresse mail:</label>
+                   <input type="text" class="form-control" id="adressemail" name="adressemail" required>
+                   <div class="valid-feedback">Ok !</div>
+                   <div class="invalid-feedback">Valeur incorrecte</div>
+               </div>
+           </div>
 
 
 
-
-
-                 <div class="form-row">
-                     <div class="col-md-6 mb-3">
-                         <label for="nomdelasociete">Nom de la société</label>
-                         <input type="text" class="form-control" id="DB entreprise" placeholder="DB entreprise" required>
-                         <div class="valid-feedback">Ok !</div>
-                         <div class="invalid-feedback">Valeur incorrecte</div>
-                     </div>
-
-<!-- Sectionnez une image radios -->
-
-<div>
-
-  <label for="formFileLg" class="form-label"> Selectionnez une image </label>
-
-  <div class="form-check">
-    <img src="\Users\Delia\OneDrive\Bureau\zot projet boots/cahier.jpg" class="img-fluid" alt="photocahier" style="width:500px; height:auto">
-  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" >
-  <label class="form-check-label" for="flexRadioDefault1">
-    Image 1
-  </label>
-</div>
-
-
-<div class="form-check">
-     <img src="\Users\Delia\OneDrive\Bureau\zot projet boots/montre.jpg" class="img-fluid" alt="photomontre" style="width:500px; height:auto">
-  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-  <label class="form-check-label" for="flexRadioDefault2">
-    Image 2
-  </label>
-</div>
-
-
- <div class="form-check">
-    <img src="\Users\Delia\OneDrive\Bureau\zot projet boots/neige.jpg" class="img-fluid" alt="photoneige" style="width:500px; height:auto">
-  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-  <label class="form-check-label" for="flexRadioDefault1">
-    Image 3
-  </label>
-</div>
-
- <div class="form-check">
-    <img src="\Users\Delia\OneDrive\Bureau\zot projet boots/surf.jpg" class="img-fluid" alt="photosurf" style="width:500px; height:auto">
-  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-  <label class="form-check-label" for="flexRadioDefault1">
-    Image 4
-  </label>
-</div>
-
-
-</div>
-
-
-
-
-<div class="mb-3">
-  <label for="formFileSm" class="form-label">Insérez un logo</label>
-  <input class="form-control form-control-sm" id="formFileSm" type="file">
-</div>
+           <label for="secteur" class="form-label">Quel est votre secteur d'activité ? </label>
+           <input class="form-control" list="datalistOptions" id="secteur" name="secteur" placeholder="Type to select...">
+           <datalist id="datalistOptions">
+              <option value="Agroalimentaire">
+                  <option value="Communication digitale">
+                      <option value="Banque/Assurance">
+                          <option value="Commerce">
+                          </datalist>
 
 
 
 
 
-                     <div class="col-md-3 mb-3">
-                         <label for="slogan">Phrase d'accorche/slogan</label>
-                         <input type="text" class="form-control" id="slogan" placeholder="Ici votre slogan" required>
-                         <div class="valid-feedback">Ok !</div>
-                         <div class="invalid-feedback">Valeur incorrecte</div>
-                     </div>
-
-
-<div class="mb-3">
-  <label for="exampleFormControlTextarea1" class="form-label">Description de votre entreprise </label>
-  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-</div>
+                          <div align="center" class="form-row">
+                           <div class="col-md-6 mb-3">
+                               <label for="nomdelasociete">Nom de la société:</label>
+                               <input type="text" class="form-control" id="DB entreprise" name="nomentreprise" required>
+                               <div class="valid-feedback">Ok !</div>
+                               <div class="invalid-feedback">Valeur incorrecte</div>
+                           </div>
 
 
 
 
+                           <!-- Sectionnez une image radios -->
 
-                
-                 <button class="btn btn-primary" type="submit">Envoyer</button>
-             </form>
-         </div>
+                           <div>
 
-          
+                              <label align="center" for="formFileLg" class="form-label"> Selectionnez une image: </label>
+
+                              <div class="form-check">
+                                <img src="\Users\Delia\OneDrive\Bureau\zot projet boots/cahier.jpg" class="img-fluid" alt="photocahier" style="width:500px; height:auto">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault1" >
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    Image 1
+                                </label>
+                            </div>
+
+
+                            <div class="form-check">
+                               <img src="\Users\Delia\OneDrive\Bureau\zot projet boots/montre.jpg" class="img-fluid" alt="photomontre" style="width:500px; height:auto">
+                               <input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault2" checked>
+                               <label class="form-check-label" for="flexRadioDefault2">
+                                Image 2
+                            </label>
+                        </div>
+
+
+                        <div class="form-check">
+                            <img src="\Users\Delia\OneDrive\Bureau\zot projet boots/neige.jpg" class="img-fluid" alt="photoneige" style="width:500px; height:auto">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefault3">
+                            <label class="form-check-label" for="flexRadioDefault3">
+                                Image 3
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <img src="\Users\Delia\OneDrive\Bureau\zot projet boots/surf.jpg" class="img-fluid" alt="photosurf" style="width:500px; height:auto">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault4" id="flexRadioDefault4">
+                            <label class="form-check-label" for="flexRadioDefault4">
+                                Image 4
+                            </label>
+                        </div>
+
+
+                    </div>
+
+
+
+
+                    <div class="mb-3">
+                      <label for="formFileSm" class="form-label">Insérez un logo:</label>
+                      <input class="form-control form-control-sm" id="formFileSm" name= formFileSm type="file">
+                  </div>
 
 
 
 
 
-</body>
-</html>
+                  <div class="col-md-3 mb-3">
+                   <label for="slogan">Phrase d'accorche/slogan:</label>
+                   <input type="text" class="form-control" id="slogan" name= slog placeholder="Ici votre slogan" required>
+                   <div class="valid-feedback">Ok !</div>
+                   <div class="invalid-feedback">Valeur incorrecte</div>
+               </div>
+
+
+               <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label">Description de votre entreprise: </label>
+                  <textarea class="form-control" name= description id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+
+
+
+
+
+
+
+              <div class="d-grid gap-2 col-6 mx-auto">
+                  <button class="btn btn-success" name= generer type="button">Générer</button>
+
+
+
+
+
+
+              </body>
+              </html>
