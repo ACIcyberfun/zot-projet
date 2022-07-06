@@ -61,22 +61,51 @@
                          <div class="invalid-feedback">Valeur incorrecte</div>
                      </div>
 
-
-<label for="couleur" class="form-label">Quelle couleur choisissez-vous? </label>
-<input class="form-control" list="colorlist" id="couleur" placeholder="Type to select...">
-<datalist id="colorlist">
-  <option value="Noir">
-  <option value="Blanc">
-  <option value="Vert">
-  <option value="Bleu">
-</datalist>
-
-
+<!-- Sectionnez une image radios -->
 
 <div>
-  <label for="formFileLg" class="form-label"> Insérez une image </label>
-  <input class="form-control form-control-lg" id="formFileLg" type="file">
+
+  <label for="formFileLg" class="form-label"> Selectionnez une image </label>
+
+  <div class="form-check">
+    <img src="\Users\Delia\OneDrive\Bureau\zot projet boots/cahier.jpg" class="img-fluid" alt="photocahier" style="width:500px; height:auto">
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" >
+  <label class="form-check-label" for="flexRadioDefault1">
+    Image 1
+  </label>
 </div>
+
+
+<div class="form-check">
+     <img src="\Users\Delia\OneDrive\Bureau\zot projet boots/montre.jpg" class="img-fluid" alt="photomontre" style="width:500px; height:auto">
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+  <label class="form-check-label" for="flexRadioDefault2">
+    Image 2
+  </label>
+</div>
+
+
+ <div class="form-check">
+    <img src="\Users\Delia\OneDrive\Bureau\zot projet boots/neige.jpg" class="img-fluid" alt="photoneige" style="width:500px; height:auto">
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+  <label class="form-check-label" for="flexRadioDefault1">
+    Image 3
+  </label>
+</div>
+
+ <div class="form-check">
+    <img src="\Users\Delia\OneDrive\Bureau\zot projet boots/surf.jpg" class="img-fluid" alt="photosurf" style="width:500px; height:auto">
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+  <label class="form-check-label" for="flexRadioDefault1">
+    Image 4
+  </label>
+</div>
+
+
+</div>
+
+
+
 
 <div class="mb-3">
   <label for="formFileSm" class="form-label">Insérez un logo</label>
