@@ -53,7 +53,7 @@ def formulaire():
             Client = Query()
             client = db.search(Client.slug == slug)
             
-            # Si le nombre de client trouvé = 0
+            # Si le nombre de clients trouvé = 0
             # Alors le client n'existe pas, on l'enregistre dans la base de donnée
             if len(client) == 0 :
                 db.insert({
