@@ -43,6 +43,13 @@ span
 {
 	color: #078080;
 }
+#ligne
+{
+	color:#f45d48;
+    border: dashed 1px;
+    width:100%;
+    margin-left: 2px;
+}
 hr
 {
 	background-color: #078080;
