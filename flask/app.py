@@ -114,7 +114,7 @@ def templater(slug):
 
         # Si plusieurs templates possible, *
         # on va chercher le nom du dossier
-        dossier_du_template = "test"
+        dossier_du_template = "cheflo"
         return render_template(f"{dossier_du_template}/client.html", client=client[0])
 
     # Sinon, ça veut dire que le client n'existe pas en base de donnée,
