@@ -27,7 +27,7 @@ services:
     labels:
       - traefik.enable=true
       - traefik.docker.network=frontend
-      - traefik.http.routers.test_machine.rule=Host(`zotprojet.nasjo.fr`)
+      - traefik.http.routers.zotprojet.rule=Host(`zotprojet.nasjo.fr`)
     networks:
       - frontend
 
