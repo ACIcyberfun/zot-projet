@@ -1,7 +1,7 @@
 body
 {
 	color:white;
-	background-image: url("../img/image-3.jpg");
+	background-image: url("../images/image-3.jpg");
 	background-size: cover;
 	background-repeat:no-repeat;	
 	min-width: 100%;
@@ -47,7 +47,7 @@ hr
 		margin-left: auto;
 		margin-right: auto;
 		color: white;
-		background-image: url("../img/Maokai_0.webp");
+		background-image: url("../images/Maokai_0.webp");
 		background-size: cover;
 		background-position: center;
 }
