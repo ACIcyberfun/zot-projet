@@ -3,10 +3,12 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>{{ client.title }}</title>
+	<title>{{ client.slug }}</title>
 </head>
 <body>
-	<h1>{{ client.name }}</h1>
-	<p>{{ client.description }}</p>
+	<h1>{{ client.nomdelasociete }}</h1>
+    <h2>{{ client.slogan }}</h2>
+
+	<p>Bonjour {{ client.prenom }} {{ client.nom }}</p>
 </body>
 </html>
