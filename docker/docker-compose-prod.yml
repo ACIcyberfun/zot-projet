@@ -24,10 +24,13 @@ services:
       - zotflask
     links:
       - zotflask:flask
+
     labels:
       - traefik.enable=true
       - traefik.docker.network=frontend
-      - traefik.http.routers.zotprojet.rule=Host(`zotprojet.nasjo.fr`)
+
+      - traefik.http.routers.zotnginx.tls.certresolver=myresolver
+      - traefik.http.routers.zotnginx.rule=Host(`zotprojet.nasjo.fr`)
     networks:
       - frontend
 
