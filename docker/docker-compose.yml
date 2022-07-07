@@ -29,7 +29,7 @@ services:
     labels:
       - traefik.enable=true
       - traefik.docker.network=frontend
-      - traefik.http.routers.test_machine.rule=Host(`www.zotprojet.re`)
+      - traefik.http.routers.test_machine.rule=Host(`zotprojet.nasjo.fr`)
     ports:
       - 80:80
     networks:
