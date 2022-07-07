@@ -1,10 +1,10 @@
 version: "3.7"
 services:
 
-  flask:
+  zotflask:
     build: .
-    hostname: flask
-    container_name: flask
+    hostname: zotflask
+    container_name: zotflask
     restart: always
     volumes:
       - ../flask:/flask
@@ -14,16 +14,16 @@ services:
 #    command: "sleep 3600"
     command: "flask run --reload --host=0.0.0.0"
 
-  nginx:
+  zotnginx:
     image: nginx
     restart: always
     volumes:
       - ./nginx:/etc/nginx/conf.d
       - ../static:/www/static
     depends_on:
-      - flask
+      - zotflask
     links:
-      - flask:flask
+      - zotflask:flask
     labels:
       - traefik.enable=true
       - traefik.docker.network=frontend
