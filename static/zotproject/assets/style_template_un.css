@@ -8,6 +8,7 @@ body
 	min-height: 100%;
 	filter: drop-shadow(8px 5px 4px #000000);
 	z-index: 1;
+	position: fixed;
 	
 
 }
