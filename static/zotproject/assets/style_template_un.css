@@ -110,7 +110,9 @@ hr
 	align-items: center;
 	margin-top: 10px;
 	margin-left: 30%;
-	margin-right: 30%;
+	margin-right: auto;
+	margin-top:0;
+	margin-bottom:0;
 	text-align: center;
 	color: rgb(255, 255, 255);
 }
