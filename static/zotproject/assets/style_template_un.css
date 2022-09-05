@@ -4,7 +4,8 @@ body
 	background-image: url("../images/image-3.jpg");
 	background-size: cover;
 	background-repeat:no-repeat;
-	filter: drop-shadow(8px 5px 4px #000000);
+	position: relative;
+	/*filter: drop-shadow(8px 5px 4px #000000);*/
 	
 
 }
