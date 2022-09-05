@@ -28,7 +28,7 @@ body
 }
 
 .navbar-dark .navbar-nav .nav-link {
-    color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255)!important;
 }
 
 hr
