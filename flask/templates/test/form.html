@@ -1,167 +1,84 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> 
-
-
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Formulaire template</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title> Formulaire </title>
 </head>
 <body>
 
+<div class="container">
 
-    <div class="container">
+    <h1> Formulaire personnalisé</h1>
 
-        <!-- Encadré du grand titre -->
-        <div class=" mt-5 mb-5 bg-success rounded-3 col-lg-6 offset-lg-3 p-2 "> 
-            <h1 class="text-center">Formulaire template personnalisé </h1> 
+    <form method="post" action="/form">
+        <div class="row">
+            <div class="col-12">
+                <label for="nomdelasociete">nomdelasociete</label>
+                <input value="test" class="form-control" type="text" name="nomdelasociete" id="nomdelasociete"/>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-6">
+                <label for="nom">nom</label>
+                <input value="test" class="form-control" type="text" name="nom" id="nom"/>
+            </div>
+
+            <div class="col-6">
+                <label for="prenom">prenom</label>
+                <input value="test" class="form-control" type="text" name="prenom" id="prenom"/>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <label for="adressemail">adressemail</label>
+                <input value="test" class="form-control" type="text" name="adressemail" id="adressemail"/>
+            </div>
+        </div>
+
+        <div class="row">
+            <label for="secteur">secteur</label>
+            <input value="test" class="form-control" type="text" name="secteur" id="secteur"/>
+
+        </div>
+
+        <div class="row">
+            <label for="couleur">couleur</label>
+            <input value="test" class="form-control" type="text" name="couleur" id="couleur"/>
+
+            <label for="flexRadioDefault">flexRadioDefault</label>
+            <input value="test" class="form-control" type="text" name="flexRadioDefault" id="flexRadioDefault"/>
+        </div>
+
+        <div class="row">
+            <label for="slogan">slogan</label>
+            <input value="test" class="form-control" type="text" name="slogan" id="slogan"/>
+        </div>
+
+        <div class="row">
+            <label for="exampleFormControlTextarea1">exampleFormControlTextarea1</label>
+            <input value="test" class="form-control" type="text" name="exampleFormControlTextarea1" id="exampleFormControlTextarea1"
+            />
+        </div>
+
+        <div class="row">
+            <label for="url_logo">url_logo</label>
+            <input value="test" class="form-control" type="text" name="url_logo" id="url_logo"/>
+        </div>
+
+        <div class="row mt-3">
+            <input class="btn btn-primary col-12" type="submit" value="Valider"/>
         </div>
 
 
-        <div class="container">
-            <p class="border-dark border mt-2"> </p>
-        </div>
-
-
-        <!-- Information générales -->
-
-        <form align="center" class="needs-validation" >
-           <div align="center" class="form-row">
-               <div class="col-md-4 mb-3">
-                   <label for="prenom">Prénom:</label>
-                   <input type="text" class="form-control" id="prenom" name="prenom"  required>
-                   <div class="valid-feedback">Ok !</div>
-                   <div class="invalid-feedback">Valeur incorrecte</div>
-               </div>
-               <div class="col-md-4 mb-3">
-                   <label for="nom">Nom:</label>
-                   <input type="text" class="form-control" id="nom" name="nom" required> </input>
-                   <div class="valid-feedback">Ok !</div>
-                   <div class="invalid-feedback">Valeur incorrecte</div>
-               </div>
-               <div class="col-md-4 mb-3">
-                   <label for="adressemail">Adresse mail:</label>
-                   <input type="text" class="form-control" id="adressemail" name="adressemail" required> </input>
-                   <div class="valid-feedback">Ok !</div>
-                   <div class="invalid-feedback">Valeur incorrecte</div>
-               </div>
-           </div>
-
-
-           <!-- Barre de selection secteur d'activité -->
-           <div class="col-md-4 mb-3 offset-4">
-               <label for="secteur " class="form-label ">Quel est votre secteur d'activité ? </label>
-               <input class="form-control" list="datalistOptions" id="secteur" name="secteur" placeholder="Type to select..."> </input>
-               <datalist id="datalistOptions">lk
-                  <option value="Agroalimentaire"> </option>
-                  <option value="Communication digitale"> </option>
-                  <option value="Banque/Assurance"> </option>
-                  <option value="Commerce"> </option>
-              </datalist>
-
-          </div>
-
-
-
-          <div align="center" class="form-row">
-           <div class="col-md-4 mb-3">
-               <label for="nomdelasociete ">Nom de la société:</label>
-               <input type="text" class="form-control" id="DB entreprise" name="nomentreprise" required> </input>
-               <div class="valid-feedback">Ok !</div>
-               <div class="invalid-feedback">Valeur incorrecte</div>
-           </div>
-
-
-
-
-           <!-- Sectionnez une image choix radios -->
-
-           <div>
-
-              <label align="center" for="formFileLg" class="form-label"> Selectionnez une image: </label>
-
-              <div class="form-check
-
-              ">
-              <img src="\Users\Delia\OneDrive\Bureau\zot projet boots/cahier.jpg" class="img-fluid mb-5 </div>" alt="photocahier" style="width:500px; height:auto">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" > </input>
-              <label class="form-check-label" for="flexRadioDefault1">
-                Image 1
-            </label>
-        </div>
-
-
-        <div class="form-check">
-           <img src="\Users\Delia\OneDrive\Bureau\zot projet boots/montre.jpg" class="img-fluid mb-5" alt="photomontre" style="width:500px; height:auto">
-           <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked> </input>
-           <label class="form-check-label" for="flexRadioDefault2">
-            Image 2
-        </label>
-    </div>
-
-
-    <div class="form-check">
-        <img src="\Users\Delia\OneDrive\Bureau\zot projet boots/neige.jpg" class="img-fluid mb-5" alt="photoneige" style="width:500px; height:auto">
-        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3"> </input>
-        <label class="form-check-label" for="flexRadioDefault3">
-            Image 3
-        </label>
-    </div>
-
-    <div class="form-check">
-        <img src="\Users\Delia\OneDrive\Bureau\zot projet boots/surf.jpg" class="img-fluid mb-5" alt="photosurf" style="width:500px; height:auto">
-        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4"> </input>
-        <label class="form-check-label" for="flexRadioDefault4">
-            Image 4
-        </label>
-    </div>
-
-
+    </form>
 </div>
-
-
-
-
-<div class="col-md-3 mb-3">
-   <label for="slogan">Phrase d'accorche/slogan:</label>
-   <input type="text" class="form-control" id="slogan" name= slog placeholder="Ici votre slogan" required> </input>
-   <div class="valid-feedback">Ok !</div>
-   <div class="invalid-feedback">Valeur incorrecte</div>
-</div>
-
-
-<!-- Insertion logo depuis ordi -->
-<div class="col-md-3 mb-3">
-   <label for="lienlogo">Insérez le lien de votre logo:</label>
-   <input type="text" class="form-control" id="lienlogo" name= lienlogo placeholder="Ici le lien de votre logo" required> </input>
-   <div class="valid-feedback">Ok !</div>
-   <div class="invalid-feedback">Valeur incorrecte</div>
-</div>
-
-<!-- Description entreprise -->
-
-<div class="mb-3 col-md-4 mb-3">
-  <label for="exampleFormControlTextarea1" class="form-label">Description de votre entreprise: </label>
-  <textarea class="form-control" name= description id="exampleFormControlTextarea1" rows="3"></textarea>
-</div>
-
-<p class="border-dark border mt-2"> </p>
-
-
-
-
-<!-- Bouton générer -->
-
-<div class="d-grid gap-2 col-6 mx-auto">
-  <button class="btn btn-success mb-5 mt-5" name= generer type="button">Générer</button>
-
-
-
-
-</div>
-
 
 </body>
 </html>
