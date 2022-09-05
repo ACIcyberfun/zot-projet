@@ -2,10 +2,11 @@ body
 {
 	color:white;
 	background-image: url("../images/image-3.jpg");
-	background-size: cover;
-	background-repeat:no-repeat;	
-	min-width: 100%;
-	min-height: 100%;
+	background-size: contain;
+	background-repeat:no-repeat;
+	background-position: center;	
+	/*min-width: 100%;
+	min-height: 100%;*/
 	filter: drop-shadow(8px 5px 4px #000000);
 	z-index: 1;
 	
