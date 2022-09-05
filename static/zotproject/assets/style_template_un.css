@@ -2,7 +2,7 @@ body
 {
 	color:white;
 	background-image: url("../images/image-3.jpg");
-	background-size: contain;
+	background-size: cover;
 	background-repeat:no-repeat;	
 	min-width: 100%;
 	min-height: 100%;
