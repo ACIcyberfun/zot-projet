@@ -5,6 +5,7 @@ body
 	background-size: cover;
 	background-repeat:no-repeat;
 	background-attachment: fixed;
+	background-position: center;
 	/*filter: drop-shadow(8px 5px 4px #000000);*/
 	
 	
