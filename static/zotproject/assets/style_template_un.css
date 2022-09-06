@@ -3,11 +3,11 @@ body
 	color:white;
 	background-image: url("../images/image-3.jpg");
 	background-size: cover;
-	background-repeat:no-repeat;	
-	min-width: 100%;
-	min-height: 100%;
-	filter: drop-shadow(8px 5px 4px #000000);
-	z-index: 1;
+	background-repeat:no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	/*filter: drop-shadow(8px 5px 4px #000000);*/
+	
 	
 
 }
@@ -26,6 +26,7 @@ body
 	color:white;
 	border-right: beige 2px solid; 
 }
+
 
 
 hr
