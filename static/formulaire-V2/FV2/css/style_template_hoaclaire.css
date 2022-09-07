@@ -1,0 +1,104 @@
+body{
+    background-image: url("../img/img_accueil.png");
+    background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+
+}
+
+
+/*ici le menu*/
+.offcanvas-body {
+color: rgb(255, 255, 255);
+background-color:#21b2a6;
+}
+
+.containu{
+text-align: center;
+    
+}
+.texter_centrer{
+    /*position: absolute;*/
+    padding-top: 20%;
+    padding-bottom: 20%;
+    top: 50%;
+    left: 35%;
+}
+/*ici les css des hr h1/2 et p*/
+h2{
+ color: white;
+}
+
+p{
+    color: rgb(255, 255, 255);
+}
+
+hr{
+    border:         none;
+    border-top:    2px solid white;
+    width:          30%;
+	color: rgb(255, 255, 255);
+	display: flex;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.imgbloc{
+    width: 100%;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color:white;
+}
+
+.btnbas{
+    margin-top:2%;
+    color: white;
+}
+
+/*ici le bloc 2 de la partie ...*/
+.presentation{
+    background-color:#21b2a6;
+    text-align: center;
+    padding: 10%;    
+}
+
+.un{
+padding-top: 5%;
+padding-left: 5%;
+}
+
+.unun{
+    padding-top: 5%;
+    padding-right: 5%;
+    text-align: right;
+    }
+
+
+.ununun{
+    padding-top: 5%;
+    padding-left: 5%;
+    }
+
+
+.suiveznous{
+ height: 400px;
+ margin-top: 10%;
+ text-align: center;
+ margin-left:30%;
+
+}
+.row {
+    --bs-gutter-x: 0;
+}
+
+.footer{
+    background-color:rgb(27, 27, 27); 
+    text-align: center;
+    padding: 2%;
+}
+
+.logo{
+    width:5%;
+}
