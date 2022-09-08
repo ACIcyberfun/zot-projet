@@ -358,3 +358,19 @@ input[type=checkbox]:not(old):checked + label > span:before {
     padding: 50px 25px; } }
 
 /*# sourceMappingURL=style.css.map */
+
+/* couleur bouton ajouter un article */
+
+#bty {
+  width: 150px;
+  color: white;
+  background-image: -moz-linear-gradient(to left, #A9DDDD, #EC916C);
+  background-image: -ms-linear-gradient(to left, #A9DDDD, #EC916C);
+  background-image: -o-linear-gradient(to left, #A9DDDD, #EC916C);
+  background-image: -webkit-linear-gradient(to left, #A9DDDD, #EC916C);
+  background-image: linear-gradient(to left, #A9DDDD, #EC916C); 
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5%;
+}
