@@ -230,33 +230,51 @@
 
               </div>
 
-              <div class="form-group">
-                <input
-                  type="submit"
-                  name="submit"
-                  id="submit"
-                  class="form-submit"
-                  value="Valider"
+              <div class="form-group" >
+                <input 
+                type="checkbox" 
+                name="agree-term" 
+                id="agree-term" 
+                class="agree-term" 
                 />
+                <label 
+                for="agree-term" 
+                class="label-agree-term">
+                <span>
+                  <span>
+
+                  </span>
+                </span>
+                Cocher pour continuer
+                </label>
+              </div>
+              
+              <div id="bty">Ajouter un article</div>
+              <div id="art">
+              
+              </div>
+              
+              <div class="form-group">
+                <input type="submit" name="submit" id="submit" class="form-submit" value="Valider"/>
               </div>
             </form>
+
+
           </div>
         </div>
       </section>
-    </div>
-
-    <!-- JS -->
-    
-  </body>
-  <!-- This templates was made by Colorlib (https://colorlib.com) -->
-</html>
-
-<script src="vendor/jquery/jquery.min.js"></script>
-<script src="js/main.js"></script>
-
-<script>
+          
+   </div>
+          
+  </body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+  </html>
+          
+          
+  <!-- JS -->
+  <script src="js/jquery-3.6.1.min.js"></script>
+  <script src="js/main.js"></script>
+  <script>
   $(bty).on( 'click', function () {
-    $(bty).after('<div ><input type="text"placeholder="collez URL de limage"><input type="text"> <textarea></textarea></div>'); 
+  $(bty).after('<div ><input type="text"placeholder="collez URL de limage"><input type="text"> <textarea></textarea></div>'); 
   });
-  
-</script>
+  </script>
