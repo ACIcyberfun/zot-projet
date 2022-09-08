@@ -221,7 +221,7 @@
                   id="agree-term"
                   class="agree-term"
                 />
-                
+
                 <div id="bty">Ajouter un article
                 </div>
                 <div id="art">
@@ -246,8 +246,17 @@
     </div>
 
     <!-- JS -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="js/main.js"></script>
+    
   </body>
   <!-- This templates was made by Colorlib (https://colorlib.com) -->
 </html>
+
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="js/main.js"></script>
+
+<script>
+  $(bty).on( 'click', function () {
+    $(bty).after('<div ><input type="text"placeholder="collez URL de limage"><input type="text"> <textarea></textarea></div>'); 
+  });
+  
+</script>
