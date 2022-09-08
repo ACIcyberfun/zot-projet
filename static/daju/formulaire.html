@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>generer un template</title>
+  </head>
+  <body style="background-color: black">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          ><img src="../daju/images/logo_cyberfun_en_blanc.png" width="100px"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="{{ __('Toggle navigation') }}"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- Left Side Of Navbar -->
+          <ul class="navbar-nav me-auto"></ul>
+
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a
+                style="color: rgba(169, 221, 221, 1)"
+                class="nav-link"
+                href="index.html"
+                >Accueil</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                style="color: rgba(169, 221, 221, 1)"
+                class="nav-link"
+                href="formulaire.html"
+                >Templates</a
+              >
+            </li>
+            <li class="nav-item">
+              <a style="color: rgba(169, 221, 221, 1)" class="nav-link" href="#"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div id="img">
+      <div class="container">
+        <div style="padding-top: 20px">
+          <form style="background-color: rgba(169, 221, 221, 0.3)">
+            <div class="mb-3">
+              <label for="nom" class="form-label">Nom</label>
+              <input
+                type="text"
+                class="form-control"
+                id="nom"
+                placeholder="Votre nom"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="prenom" class="form-label">Prénom</label>
+              <input
+                type="text"
+                class="form-control"
+                id="prenom"
+                placeholder="Votre prénom"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="mail" class="form-label">Adresse e-mail</label>
+              <input
+                type="email"
+                class="form-control"
+                id="mail"
+                placeholder="nom@exemple.com"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="secteur" class="form-label">Secteur d'activité</label>
+              <input
+                class="form-control"
+                list="datalistOptions"
+                id="secteur"
+                placeholder="Sélectionnez votre secteur d'activité"
+              />
+              <datalist id="datalistOptions">
+                <option value="San Francisco"></option>
+                <option value="New York"></option>
+                <option value="Seattle"></option>
+                <option value="Los Angeles"></option>
+                <option value="Chicago"></option>
+              </datalist>
+            </div>
+            <div class="mb-3">
+              <label for="entreprise" class="form-label"
+                >Nom de votre entreprise</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="entreprise"
+                placeholder="Nom de l'entreprise"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Email address</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="name@example.com"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Email address</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="name@example.com"
+              />
+            </div>
+            <div class="row">
+              <div class="col">
+                <label for="exampleColorInput" class="form-label"
+                  >Color picker</label
+                >
+                <input
+                  type="color"
+                  class="form-control form-control-color"
+                  id="exampleColorInput"
+                  value="#563d7c"
+                  title="Choose your color"
+                />
+              </div>
+              <div class="col">
+                <input
+                  type="color"
+                  class="form-control form-control-color"
+                  id="exampleColorInput"
+                  value="#563d7c"
+                  title="Choose your color"
+                />
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Email address</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="name@example.com"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<style>
+  #img {
+    background-image: url("../daju/images/img-formulaire-vert.png");
+    width: 100%;
+
+    background-position: center;
+  }
+</style>
