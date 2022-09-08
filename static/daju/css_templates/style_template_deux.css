@@ -1,0 +1,33 @@
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/Sans\ titre.png");
+    background-repeat: no-repeat;
+    background-position: 100%;
+
+    
+
+}
+h1{
+    color:white;
+    text-align: center;
+    margin-top: 100px;
+}
+h2{
+    
+    color:white;
+    text-align: center;
+    margin-top: 50px;
+    
+}
+p{
+    text-align: center;
+    color: white;
+    margin-top: 150px;
+}
+.border-end{
+    color: white;
+    margin:auto;
+}
+.image{
+   text-align: center;
+   margin-top: 50px;
+}
