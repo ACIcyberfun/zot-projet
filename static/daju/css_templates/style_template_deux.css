@@ -1,9 +1,7 @@
 body{
-    background-image: linear-gradient( rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0)), url("../images/Sans\ titre.png");
+    background-image: linear-gradient( rgba(100, 94, 94, 0.466), rgba(100, 94, 94, 0.466)), url("../images/Sans\ titre.png");
     background-repeat: no-repeat;
-    background-position: 100%;
-
-    
+    background-position: 100%;  
 
 }
 h1{
