@@ -1,4 +1,4 @@
-body{
+git pullbody{
     background-image: url("../images/img_accueil.png");
     background-size: cover;
 	background-attachment: fixed;
@@ -52,10 +52,6 @@ hr{
     color:white;
 }
 
-.btnbas{
-    margin-top:2%;
-    color: white;
-}
 
 /*ici le bloc 2 de la partie ...*/
 .presentation{
