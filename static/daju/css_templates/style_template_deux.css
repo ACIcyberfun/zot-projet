@@ -30,6 +30,8 @@ p{
    text-align: center;
    margin-top: 50px;
 }
-button{
-    
+.boutonf{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
