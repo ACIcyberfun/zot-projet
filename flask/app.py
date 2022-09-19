@@ -39,28 +39,21 @@ def game(score):
 ZotProjet
 '''
 
-
 @app.route('/form', methods=['POST', 'GET'])
 def formulaire():
     if request.method == 'GET':
         # Alors c'est que le formulaire est vide
-        return render_template('test/form.html')
+        return render_template('daju/form.html')
 
     if request.method == 'POST':
 
         # on vérifie que le formulaire est bien rempli :
-        nom = request.form.get("nom")
-        prenom = request.form.get("prenom")
-        adressemail = request.form.get("adressemail")
-        secteur = request.form.get("secteur")
+        url = request.form.get("url")
         nomdelasociete = request.form.get("nomdelasociete")
-        couleur = request.form.get("couleur")
-        url_logo = request.form.get("url_logo")
-        # formFileSm = request.form.get("formFileSm")
-        # formFileLg = request.form.get("formFileLg")
-        flex_radio_default = request.form.get("flexRadioDefault")
-        slogan = request.form.get("slogan")
-        example_form_control_textarea1 = request.form.get("exampleFormControlTextarea1")
+        soustitre = request.form.get("soustitre")
+        texte = request.form.get("texte")
+        email = request.form.get("email")
+        phone = request.form.get("phone")
 
         slug = slugify(nomdelasociete)
 
@@ -79,17 +72,13 @@ def formulaire():
             if len(client) == 0:
                 print(f'client : {client}')
                 db.insert({
-                    "slug": slug,
-                    "nom": nom,
-                    "prenom": prenom,
-                    "adressemail": adressemail,
-                    "secteur": secteur,
+                    "url": url,
                     "nomdelasociete": nomdelasociete,
-                    "couleur": couleur,
-                    "flexRadioDefault": flex_radio_default,
-                    "slogan": slogan,
-                    "exampleFormControlTextarea1": example_form_control_textarea1,
-                    "url_logo": url_logo,
+                    "soustitre": soustitre,
+                    "texte": texte,
+                    "email": email,
+                    "phone": phone,
+                    "slug":slug,
                 })
                 print(f'redirect vers  : /{slug}')
                 return redirect(f'/{slug}')
@@ -97,7 +86,6 @@ def formulaire():
             else:
                 return 'existe déja ! Merci de rentrer un autre nom'
         return 'Pas de nom de société'
-
 
 
 
@@ -115,8 +103,9 @@ def templater(slug):
 
         # Si plusieurs templates possible, *
         # on va chercher le nom du dossier
-        dossier_du_template = "cheflo"
-        return render_template(f"{dossier_du_template}/index.html", client=client[0])
+        # dossier_du_template = "cheflo"
+        # return render_template(f"{dossier_du_template}/index.html", client=client[0])
+        return render_template(f"test/client.html", client=client[0])
 
     # Sinon, ça veut dire que le client n'existe pas en base de donnée,
     # on renvoie vers la page formulaire.
