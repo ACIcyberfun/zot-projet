@@ -8,6 +8,7 @@ services:
     restart: always
     ports:
       - 5000:5000
+      - 2224:22
     volumes:
       - ../flask:/flask
     working_dir: /flask
@@ -31,7 +32,7 @@ services:
       - traefik.docker.network=frontend
       - traefik.http.routers.test_machine.rule=Host(`zotprojet.nasjo.fr`)
     ports:
-      - 80:80
+      - 8088:80
     networks:
       - frontend
 

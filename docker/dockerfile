@@ -4,3 +4,6 @@ RUN apt upgrade -y
 RUN pip install pip --upgrade
 COPY requirements.txt /requirements.txt
 RUN pip install --no-input -r requirements.txt
+RUN apt update
+RUN apt install openssh-server -y
+RUN apt install git -y
