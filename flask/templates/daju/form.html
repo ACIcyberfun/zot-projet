@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>formulaire template</title>
+
+    <!-- Font Icon -->
+    <link
+      rel="stylesheet"
+      href="/static/formulaire-V2/FV2/fonts/material-icon/css/material-design-iconic-font.min.css"
+    />
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="/static/formulaire-V2/FV2/css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="/static/daju/index.html"
+          ><img
+            src="/static/daju/images/logo_cyberfun_en_blanc.png"
+            width="100px"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- Left Side Of Navbar -->
+          <ul class="navbar-nav me-auto"></ul>
+
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a
+                style="color: rgba(169, 221, 221, 1)"
+                class="nav-link"
+                href="/static/daju/index.html"
+                >Accueil</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                style="color: rgba(169, 221, 221, 1)"
+                class="nav-link"
+                href="form.html"
+                >Templates</a
+              >
+            </li>
+            <li class="nav-item">
+              <!-- Button trigger modal -->
+              <button
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                style="
+                  background-color: rgba(33, 37, 41, 1);
+                  border: none;
+                  color: rgba(169, 221, 221, 1);
+                  padding-top: 8px;
+                "
+              >
+                Contact
+              </button>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">
+                        Prendre contact avec nous
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body" style="text-align: center">
+                      Vous voulez un site sur mesure? <br />
+                      Prenons rendez-vous pour en discuter. <br />
+                      Veuilliez nous contacter au 06 93 xx xx xx.
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div style="margin-top: 30px"></div>
+    <div class="main">
+      <section class="signup">
+        <!-- <img src="images/signup-bg.jpg" alt=""> -->
+        <div class="containere">
+          <div class="signup-content">
+            <form method="POST" id="signup-form" class="signup-form">
+              <h2 class="form-title">Formulaire personnalisé</h2>
+
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-input"
+                  name="url"
+                  id="lien-url"
+                  placeholder="Coller l'url de l'image hébergé ( Exemple : logo )"
+                />
+              </div>
+
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-input"
+                  name="nomdelasociete"
+                  id="societe"
+                  placeholder="Nom de la societe"
+                />
+              </div>
+
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-input"
+                  name="soustitre"
+                  id="sous-titre"
+                  placeholder="Ecrivez votre sous-titre"
+                />
+              </div>
+
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-input"
+                  name="texte"
+                  id="texte-global"
+                  placeholder="Ecrivez votre description"
+                />
+              </div>
+
+              <div class="form-group">
+                <input
+                  type="email"
+                  class="form-input"
+                  name="email"
+                  id="email"
+                  placeholder="Adresse email"
+                />
+              </div>
+
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-input"
+                  name="phone"
+                  id="telephone"
+                  placeholder="Numéro de téléphone"
+                />
+              </div>
+
+                <div style="text-align: center;">
+
+                  <input type="button" id="bty" value="Ajouter un article">
+
+
+              </div>
+
+              <div id="art"></div>
+
+              <div class="form-group">
+                <input
+                  type="submit"
+                  name="submit"
+                  id="submit"
+                  class="form-submit"
+                  value="Valider"
+                />
+              </div>
+            </form>
+
+            <div>
+              <a
+                href="https://acicyberfun.github.io/zot-projet/static/papersnkrs/test/index.html"
+                >
+                <div style="text-align: center;">
+
+                  <input type="button" id="btn-temp" value="Template 1">
+
+
+              </div></a
+              >
+
+              <a
+                href="https://acicyberfun.github.io/zot-projet/static/daju/template_deux"
+                ><button class="btn-temp">Template 2</button></a
+              >
+              <a
+                href="https://acicyberfun.github.io/zot-projet/static/daju/template3"
+                ><button class="btn-temp">Template 3</button></a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+  <!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>
+
+<!-- JS -->
+<script src="/static/formulaire-V2/FV2/js/jquery-3.6.1.min.js"></script>
+<script src="/static/formulaire-V2/FV2/js/main.js"></script>
+<script>
+  var input_num = 0;
+
+  $(bty).on("click", function () {
+    input_num += 1;
+    console.log(input_num);
+
+    $(art).after(
+      '\
+    <div class="zone-btn">\
+      <input class="form-input" name="art_img_' +
+        input_num +
+        '" type="text"placeholder="Collez URL de limage">\
+      <input class="form-input" name="art_title_' +
+        input_num +
+        '" type="text" placeholder="Titre">\
+      <input class="form-input" name="art_text_' +
+        input_num +
+        '" type="text" placeholder="Texte">\
+      </div>'
+    );
+  });
+</script>

@@ -57,6 +57,7 @@ def formulaire():
 
         slug = slugify(nomdelasociete)
 
+
         # import ipdb; ipdb.set_trace()
         print(f'slug : {slug}')
         if nomdelasociete:
