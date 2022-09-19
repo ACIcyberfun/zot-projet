@@ -322,10 +322,3 @@ body {
     font-family: "Montserrat", sans-serif;
     font-weight: 200;
 }
-
-.btn-temp{
-  color: white;
-  background-color: rgba(7, 128, 129, 1);
-  border: solid 2px rgba(7, 128, 129, 1);
-  text-align: center;
-}

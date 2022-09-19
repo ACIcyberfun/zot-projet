@@ -214,23 +214,6 @@
                 />
               </div>
             </form>
-
-            <div>
-              
-              <a
-                href="https://acicyberfun.github.io/zot-projet/static/papersnkrs/test/index.html"
-                ><button class="btn-temp">Template 1</button></a
-              >
-
-              <a
-                href="https://acicyberfun.github.io/zot-projet/static/daju/template_deux"
-                ><button class="btn-temp">Template 2</button></a
-              >
-              <a
-                href="https://acicyberfun.github.io/zot-projet/static/daju/template3"
-                ><button class="btn-temp">Template 3</button></a
-              >
-            </div>
           </div>
         </div>
       </section>
@@ -252,13 +235,13 @@
     $(art).after(
       '\
     <div class="zone-btn">\
-      <input name="art_img_' +
+      <input class="form-input" name="art_img_' +
         input_num +
-        '" type="text"placeholder="collez URL de limage">\
-      <input name="art_title_' +
+        '" type="text"placeholder="Collez URL de limage">\
+      <input class="form-input" name="art_title_' +
         input_num +
         '" type="text" placeholder="Titre">\
-      <input name="art_text_' +
+      <input class="form-input" name="art_text_' +
         input_num +
         '" type="text" placeholder="Texte">\
       </div>'
