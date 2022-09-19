@@ -90,7 +90,6 @@ def formulaire():
         return 'Pas de nom de société'
 
 
-
 # noinspection PyUnresolvedReferences,PyTypeChecker
 @app.route('/<slug>')
 def templater(slug):
@@ -106,8 +105,11 @@ def templater(slug):
         # Si plusieurs templates possible, *
         # on va chercher le nom du dossier
         # dossier_du_template = "cheflo"
-        # return render_template(f"{dossier_du_template}/index.html", client=client[0])
+        if client[0].get('tempc') == "3" :
+            return render_template(f"papertemp/index.html", context=client[0])
         return render_template(f"test/client.html", client=client[0])
+
+
 
     # Sinon, ça veut dire que le client n'existe pas en base de donnée,
     # on renvoie vers la page formulaire.
