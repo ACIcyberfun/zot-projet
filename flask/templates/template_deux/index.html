@@ -1,79 +1,11 @@
 <!DOCTYPE html>
 <html>
-
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-	<link rel="stylesheet" href="./css_templates/style_template_deux.css" />
-    <title>Zotprojet</title>
+	<title>Test page for templating</title>
 </head>
-<header>
-  <nav class="navbar navbar-expand-md navbar-dark mt-5 ">
-    <div class="container">
-
-
-        <button class="navbar-toggler" type="button " 
-
-        aria-controls="navbarNav" 
-        aria-expanded="false" 
-        aria-label="Toggle navigation"
-
-        data-bs-toggle="collapse" 
-        data-bs-target="#navbarNav" 
-        >
-
-        <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="#accueil">Accueil</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#A propos">A propos</a>
-            </li>
-            <li class="nav-item">
-                
-            <li class="nav-item">
-                <a class="nav-link " href="#contact">Contact</a>
-            </li>
-        </ul>
-    </div>
-
-</div>
-</nav>
-</header>
 <body>
-  <div class="image">
-    <img src="https://www.chloesigaud.fr/wp-content/uploads/2016/11/infographiste-graphiste.png" alt="logo" width="150" >
-  </div>
-    <h1>{{context.template_deux}}
-      <span class="border-end"></span>
-      Nom de la Société
-      <span class="border-end"></span>
-    </h1>
-    <h2>
-      ici la phrase d'accorche
-    </h2>
-    <p>
-      <span class="border-top"></span>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br>
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br>
-        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
-
-  <div class="boutonf">
-    <a href="https://acicyberfun.github.io/zot-projet/static/formulaire-V2/FV2/form.html">
-      <button type="button" class="btn btn-dark">Visionnez le formulaire</button>
-    </a>
-  </div>
-      
-    
+	<h1>{{ context.template_deux }}</h1>
 </body>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 </html>

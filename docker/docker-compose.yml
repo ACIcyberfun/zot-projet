@@ -14,7 +14,7 @@ services:
     working_dir: /flask
     networks:
       - frontend
-#    command: "sleep 3600"
+    # command: "sleep 3600"
     command: "flask run --reload --host=0.0.0.0"
 
   nginx:

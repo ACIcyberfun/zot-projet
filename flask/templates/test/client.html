@@ -6,9 +6,13 @@
 	<title>{{ client.slug }}</title>
 </head>
 <body>
+	<img src="{{ client.url }}">
 	<h1>{{ client.nomdelasociete }}</h1>
-    <h2>{{ client.slogan }}</h2>
 
-	<p>Bonjour {{ client.prenom }} {{ client.nom }}</p>
+	<h2>{{ client.soustitre }}</h2>
+	<p>{{ client.texte }}</p>
+	<p>{{ client.email }}</p>
+	<p>{{ client.phone }}</p>
+
 </body>
 </html>
