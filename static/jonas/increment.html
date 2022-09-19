@@ -7,8 +7,8 @@
 </head>
 <body>
 	<div>
-		<span id="inc">0</span>
 		<button id="add">Add 1</button>
+		<span id="inc">0</span>
 	</div>
 </body>
 <script type="text/javascript" src="jquery-3.6.1.min.js"></script>
@@ -19,7 +19,16 @@
 		input_num += 1
 		console.log(input_num)
 		$(inc).text(input_num)
+
+
+		$(inc).after('\
+			<div class="zone-btn">\
+			  <input name="art_img_' + input_num + '" type="text"placeholder="collez URL de limage">\
+			  <input name="art_title_' + input_num + '" type="text" placeholder="Titre">\
+			  <input name="art_text_' + input_num + '" type="text" placeholder="Texte">\
+		    </div>'
+	    ); 
 	});
-	
-</script>
-</html>
+
+	</script>
+	</html>
