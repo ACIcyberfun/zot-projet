@@ -25,7 +25,7 @@ def index():
         'premiere_variable': 'CyB3rFun',
         'seconde_variable': 'PopopoooOOoo'
     }
-    return render_template('test/index.html', context=context)
+    return render_template('daju/index.html', context=context)
 
 
 # On teste avec une route qui contient une variable.
