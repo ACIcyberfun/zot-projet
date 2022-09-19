@@ -54,11 +54,12 @@ def formulaire():
         texte = request.form.get("texte")
         email = request.form.get("email")
         phone = request.form.get("phone")
+        tempc = request.form.get("tempc")
 
         slug = slugify(nomdelasociete)
 
         # import ipdb; ipdb.set_trace()
-        print(f'slug : {slug}')
+        print(f'slug : {slug}, tempc: {tempc}')
         if nomdelasociete:
             print(f'nomdelasociete : {nomdelasociete}')
 
@@ -78,6 +79,7 @@ def formulaire():
                     "texte": texte,
                     "email": email,
                     "phone": phone,
+                    "tempc":tempc,
                     "slug":slug,
                 })
                 print(f'redirect vers  : /{slug}')
