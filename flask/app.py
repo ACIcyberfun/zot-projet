@@ -102,9 +102,9 @@ def templater(slug):
     # en base de donnée est suppérieur a 0 ( = 1 )
     if len(client) > 0:
 
-        # Si plusieurs templates possible, *
-        # on va chercher le nom du dossier
-        # dossier_du_template = "cheflo"
+        # Si plusieurs templates possible
+        if client[0].get('tempc') == "2" :
+            return render_template(f"template_deux/index.html", client=client[0])
         if client[0].get('tempc') == "3" :
             return render_template(f"papertemp/index.html", context=client[0])
         return render_template(f"test/client.html", client=client[0])
