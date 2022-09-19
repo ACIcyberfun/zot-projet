@@ -322,3 +322,9 @@ body {
     font-family: "Montserrat", sans-serif;
     font-weight: 200;
 }
+
+.radio-check{
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
