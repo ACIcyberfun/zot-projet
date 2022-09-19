@@ -266,12 +266,8 @@ body {
   font-weight: 700;
   color: #fff;
   text-transform: uppercase;
-  border: none;
-  background-image: -moz-linear-gradient(to left, #A9DDDD, #EC916C);
-  background-image: -ms-linear-gradient(to left, #A9DDDD, #EC916C);
-  background-image: -o-linear-gradient(to left, #A9DDDD, #EC916C);
-  background-image: -webkit-linear-gradient(to left, #A9DDDD, #EC916C);
-  background-image: linear-gradient(to left, #A9DDDD, #EC916C); }
+  background-color: rgba(7, 128, 129, 1);
+  border: solid 2px rgba(7, 128, 129, 1); }
 
 .label-agree-term {
   font-size: 12px;
@@ -313,25 +309,23 @@ body {
 /* couleur bouton ajouter un article */
 
 #bty {
-  width: 150px;
-  color: black;
-  background-image: -moz-linear-gradient(to left, #A9DDDD, #EC916C);
-  background-image: -ms-linear-gradient(to left, #A9DDDD, #EC916C);
-  background-image: -o-linear-gradient(to left, #A9DDDD, #EC916C);
-  background-image: -webkit-linear-gradient(to left, #A9DDDD, #EC916C);
-  background-image: linear-gradient(to left, #A9DDDD, #EC916C); 
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 5%;
+ 
+    width: 200px;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: rgba(7, 128, 129, 1);
+    border: solid 2px rgba(7, 128, 129, 1);
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
 }
 
 .btn-temp{
-  color: black;
-  background-image: -moz-linear-gradient(to left, #A9DDDD, #EC916C);
-  background-image: -ms-linear-gradient(to left, #A9DDDD, #EC916C);
-  background-image: -o-linear-gradient(to left, #A9DDDD, #EC916C);
-  background-image: -webkit-linear-gradient(to left, #A9DDDD, #EC916C);
-  background-image: linear-gradient(to left, #A9DDDD, #EC916C); 
+  color: white;
+  background-color: rgba(7, 128, 129, 1);
+  border: solid 2px rgba(7, 128, 129, 1);
   text-align: center;
 }
