@@ -12,6 +12,7 @@ app = Flask(__name__)
 # On défini l'endroit ou est stocké la base de donnée :
 db = TinyDB('./db.json')
 
+
 '''
 Projet Example
 '''
@@ -19,12 +20,12 @@ Projet Example
 
 # On teste l'appli avec la route par default.
 @app.route("/")
-def test_template():
+def index():
     context = {
         'premiere_variable': 'CyB3rFun',
         'seconde_variable': 'PopopoooOOoo'
     }
-    return render_template('accueil/accueil.html', context=context)
+    return render_template('daju/index.html', context=context)
 
 
 # On teste avec une route qui contient une variable.
